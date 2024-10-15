@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fffacd; /* Pale yellow */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height */
+}
+
+header {
+  background-color: #b30000; /* Red background */
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 5rem; /* Header font size */
+  margin-bottom: 10px;
+}
+
+nav {
+  background-color: #add8e6; /* Light blue navbar */
+  padding: 15px 0; /* Increased padding for navbar */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 10px 40px;
+}
+
+nav ul li a {
+  color: #333;
+  font-size: 2rem; /* Increased navbar font size */
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none; /* Fix: text-decoration should be 'none' */
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+nav ul li a:hover {
+  background-color: #b3e0ff; /* Lighter blue on hover */
+  color: #b30000; /* Change text color on hover */
+  font-weight: 700;
+}
+
+main {
+  flex-grow: 1;
+  padding: 100px 20px; /* Adjusted padding */
+  text-align: center;
+  max-width: 1200px; /* Increased width for body */
+  margin: auto; /* Horizontally center the content */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+main h2 {
+  color: #b30000;
+  font-size: 3rem; /* Increased size for main headings */
+  margin-bottom: 20px;
+}
+
+main h3 {
+  color: #333;
+  font-size: 2.5rem; /* Increased size for subheadings */
+  margin: 20px 0; /* Adequate space between headings */
+}
+
+main p,
+main ul {
+  font-size: 2rem; /* Increased body text size */
+  margin-bottom: 20px; /* Adequate space between paragraphs */
+  line-height: 1.8; /* More space between lines */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 15px 0;
+}
+
+footer {
+  background-color: #b30000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 40px 15px;
+  }
+
+  main h2 {
+    font-size: 2.2rem; /* Adjust for smaller screens */
+  }
+
+  nav ul li a {
+    font-size: 1.4rem; /* Adjust for smaller screens */
+  }
+}
